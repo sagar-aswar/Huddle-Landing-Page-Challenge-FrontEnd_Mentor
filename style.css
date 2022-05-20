@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* Attribution Styling */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.bg-images {
+    position: absolute;
+    top: -55px;
+    left: -40px;
+    z-index: -1;
+    height: 750px;
+}
+
+#mobile {
+    display: none;
+}
+
+header {
+    height: 140px;
+    width: 250px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo-image {
+    margin: 0 0 0 50px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-image img {
+    width: 200px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    margin: 0;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    padding: 0 0 0 50px;
+    margin: 0 0 120px 20px;
+}
+
+.right h1 {
+    font-size: 40px;
+    margin: 0 100px 0px 0px;
+}
+
+.right p {
+    font-size: 17px;
+    margin: 20px 105px 30px 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a.btn {
+    color: hsl(257, 40%, 49%);
+    background-color: white;
+    width: 200px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    align-self: flex-start;
+    padding: 13px 50px;
+    box-shadow: 0 5px 20px hsl(228, 32%, 22%);
+}
+
+a.btn:hover {
+    color: white;
+    background-color: hsl(300, 69%, 71%);
+}
+
+footer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.socials {
+    width: 200px;
+}
+
+.social-logo {
+    font-size: 18px;
+    border: 1.75px solid white;
+    border-radius: 50%;
+    padding: 7.5px;
+    margin: 0 10px;
+}
+
+.social-logo:hover {
+    color: hsl(300, 69%, 71%);
+    cursor: pointer;
+    border-color: hsl(300, 69%, 71%);
+}
+
+@media (max-width:375px) {
+    #desktop {
+        display: none;
+    }
+    #mobile {
+        display: block;
+    }
+    .bg-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    header {
+        width: 350px;
+        margin: 0 35px 30px 35px;
+    }
+    .logo-image {
+        margin: 0;
+    }
+    .logo-image img {
+        width: 150px;
+    }
+    main {
+        flex-direction: column;
+    }
+    .left {
+        width: 100%;
+        margin: 30px auto;
+    }
+    .left img {
+        width: 300px;
+    }
+    .right {
+        width: 100%;
+        padding: 20px 45px;
+        margin: 0;
+    }
+    .right h1 {
+        font-size: 25px;
+        margin: 0;
+        text-align: center;
+        line-height: 1.5;
+    }
+    .right p {
+        font-size: 15px;
+        margin: 10px 0;
+        text-align: center;
+    }
+    a.btn {
+        align-self: center;
+        margin: 25px 0;
+    }
+    footer {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .socials {
+        height: auto;
+        margin: 50px auto;
+    }
+    .social-logo {
+        font-size: 16px;
+    }
+}
